@@ -13,15 +13,9 @@ function getdata() {
         //now we have data in variables
         //now show them in our html
         
-         document.getElementById("name").innerHTML = "Link Code was Invalid";
-        
-        if (name.includes("undefined")) {
-        
         document.getElementById("name").innerHTML = name;
         document.getElementById("gender").innerHTML = gender;
          document.getElementById("country").src = country;
-        
-        };
         
        // var img = document.createElement('img')
         
