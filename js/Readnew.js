@@ -32,7 +32,6 @@ document.getElementById("gender").innerHTML = "";
 
 	// Check If Valid (or) Invalid
 
-		if (name.includes("undefined")) {
 
 			document.getElementById("name").innerHTML = name;
 
@@ -43,7 +42,6 @@ document.getElementById("gender").innerHTML = "";
 
 
 
-		};
 
 
 		/*
