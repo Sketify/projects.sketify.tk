@@ -18,15 +18,8 @@ function getdata() {
 		//now show them in our html
 
 
-		document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
-
-		document.getElementById("country").src = "https://www.pngitem.com/pimgs/b/130-1308065_caution-sign-png.png"; 
-
-	
-
 	// Check If Valid (or) Invalid
 
-		if (name.includes("undefined")) {
 
 			document.getElementById("name").innerHTML = name;
 
@@ -34,16 +27,9 @@ function getdata() {
 
 			document.getElementById("country").src = country;
 
-		};
-
 
 		// 
 
-		var img = document.createElement('img')
-
-		//  img.src 
-
-		= country
 
 		//  document.body.appendChild(img)
 
