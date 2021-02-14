@@ -44,7 +44,7 @@ document.getElementById("gender").innerHTML = "";
 		};
 
 
-		// 
+		/*
 
 		var img = document.createElement('img')
 
@@ -53,6 +53,6 @@ document.getElementById("gender").innerHTML = "";
 		= country
 
 		//  document.body.appendChild(img)
-
+*/
 	})
 }
