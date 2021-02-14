@@ -20,6 +20,18 @@ function getdata() {
 
 
 
+document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
+
+		document.getElementById("country").src = "https://www.pngitem.com/pimgs/b/130-1308065_caution-sign-png.png"; 
+
+document.getElementById("gender").innerHTML = "";	
+
+
+
+	// Check If Valid (or) Invalid
+
+		if (name.includes("undefined")) {
+
 			document.getElementById("name").innerHTML = name;
 
 			document.getElementById("gender").innerHTML = gender;
@@ -27,16 +39,6 @@ function getdata() {
 			document.getElementById("country").src = country;
 		
 
-	// Check If Valid (or) Invalid
-
-		if (name.includes("undefined")) {
-
-
-document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
-
-		document.getElementById("country").src = "https://www.pngitem.com/pimgs/b/130-1308065_caution-sign-png.png"; 
-
-document.getElementById("gender").innerHTML = "";	
 
 
 		};
