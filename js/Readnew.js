@@ -32,8 +32,10 @@ document.getElementById("gender").innerHTML = "";
 
 	// Check If Valid (or) Invalid
 
+if(o.myProperty === undefined) {
+  alert("myProperty value is the special value `undefined`");
 
-			document.getElementById("name").innerHTML = name;
+document.getElementById("name").innerHTML = name;
 
 			document.getElementById("gender").innerHTML = gender;
 
@@ -42,6 +44,10 @@ document.getElementById("gender").innerHTML = "";
 
 
 
+
+}
+
+			
 
 
 		/*
