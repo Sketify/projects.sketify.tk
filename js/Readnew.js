@@ -18,7 +18,7 @@ function getdata() {
 		//now show them in our html
 
 
-		document.getElementById("name").innerHTML = "	    <strong>   Project ID Is Invalid </strong>";
+		document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
 
 		document.getElementById("country").src = "https://www.pngitem.com/pimgs/b/130-1308065_caution-sign-png.png"; 
 
@@ -32,8 +32,7 @@ function getdata() {
 
 			document.getElementById("gender").innerHTML = gender;
 
-			document.getElementById
-("country").src = country;
+			document.getElementById("country").src = country;
 
 		};
 
