@@ -1,63 +1,3 @@
-﻿## Welcome to Sketify!!
-
-You can use the [editor on GitHub](https://github.com/Sketify/projects.sketify.tk/edit/projects/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sketify/projects.sketify.tk/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----------------
-
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
    <head>
@@ -176,7 +116,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
       <div class="container">
          <div class="card">
             <div background-color="#008dcd" class="card-header">
-               <img alt="Sketchub" class="img-responsive" width="90" height="90" src="https://raw.githubusercontent.com/Sketify/projects.sketify.tk/projects/gt-sketify-logo-white.png">
+               <img alt="Sketify Logo" class="img-responsive" width="90" height="90" src="gt-sketify-white-logo.png">
             </div>
             <!-- Main Header End-->
 
@@ -238,34 +178,33 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
          </div>
          -->
       <!-- Deeplink Stylesheet-->
+      <style>
+         <link href='http://sketchware.io/css/deeplink.css' rel='stylesheet'>
+         </link>
+      </style>
       <!-- Deeplink Stylesheet-->
-      <input type="text" id="user" required="required" >
+      <input type="text" id="user" required="required" class="hidden" >
       <!-- Functions Start -->
       <!-- Script To Get Credentials-->
       <script>
          var url =  "<?= $url ?>";
          
-         if (url.includes("msk") !== false )  {            
-                 
-		document.getElementById("gender").innerHTML = url; 
-		 <?php
-            $uri = str_replace( 'https://sketify.000webhostapp.com/owritten-?id=msk-refer-sketifyapplicationparam-9a71e0719545676a138b25f1a00c30e4dfba301d-1613274417-0-AXz_t-Un1QG914Iv1MvBia1f7ScUVzvJ95H9QICmvFknUMQJHqHp0241u54UDlH24c2cU3bXYzYczYN8jxWpicK5j7i_ZXl-RqMVoIoQRrYX0KnaYuBuKd9xGoUky4jAhyrAUiYY7jbGWNOTA_oYb1G_jEqFH8Ad2ofjx3Fac6EQpLaolsUvsjXLGcI1KGeP_62RtQ_sQGE7u5VEE_dBV-h-FlSyB4bZ6DFwQZHmoMerZQUchYrGj5UrdIahOb-bi8j5jdiauyWUyrTKX8cFGqhOgtVHtgKDYo_zVcvLTipIcW5HtUpk1RCR4QcWUPcj0w', '', $url );
+         if (url.includes("msk") !== false)  {             
+                  <?php
+            $uri = str_replace( 'https://projects.sketify.tk/owritten-?id=msk-refer-sketifyapplicationparam-9a71e0719545676a138b25f1a00c30e4dfba301d-1613274417-0-AXz_t-Un1QG914Iv1MvBia1f7ScUVzvJ95H9QICmvFknUMQJHqHp0241u54UDlH24c2cU3bXYzYczYN8jxWpicK5j7i_ZXl-RqMVoIoQRrYX0KnaYuBuKd9xGoUky4jAhyrAUiYY7jbGWNOTA_oYb1G_jEqFH8Ad2ofjx3Fac6EQpLaolsUvsjXLGcI1KGeP_62RtQ_sQGE7u5VEE_dBV-h-FlSyB4bZ6DFwQZHmoMerZQUchYrGj5UrdIahOb-bi8j5jdiauyWUyrTKX8cFGqhOgtVHtgKDYo_zVcvLTipIcW5HtUpk1RCR4QcWUPcj0w', '', $url );
             $urid = str_replace( '&afI=https://sketify.tk&efr=1' , '', $uri );
                 
                 $vari = json_encode($urid);
-                
-                
                 ?>
             
+              document.getElementById("user").value = "<?= $urid ?>";
                 
             
-             }
+             };
           
               
               
-              document.getElementById("user").value = "<?= $urid ?>";
-              
-              
+            
       </script>
       <!-- Scripts To Get Credentials End -->
       <!-- Firebase Credentials-->
@@ -291,7 +230,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
          firebase.initializeApp(firebaseConfig);
          
       </script>
-      <script type="text/javascript" src="js/Readnew.js"></script>
+      <script type="text/javascript" src="Read.js"></script>
       <script>
          // Extra Codes Will Go Here...
          
