@@ -1,5 +1,7 @@
 function getdata() {
 	var user = document.getElementById("user").value;
+
+	alert(user);
 	//firebase data retrieval function
 	//path of your data
 	//.once will get all your data in one time
