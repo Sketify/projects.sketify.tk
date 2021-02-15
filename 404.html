@@ -174,7 +174,7 @@
       <!-- Deeplink Stylesheet-->
       <center>
 
-         <input type="text" id="user" required="required" value=<?= "$urid?" ?> >
+         <input type="text" id="user" required="required" value=" <?= $urid ?> " >
      
          </center>
           <!-- Functions Start -->
@@ -194,7 +194,7 @@
                 $vari = json_encode($urid);
                 ?>
             
-              document.getElementById("user").value = "id Here";
+              document.getElementById("user").value = <?= $urid ?> ;
                 
             
              };
