@@ -1,29 +1,55 @@
 
 <!DOCTYPE html>
+
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+   
+
+<!----------------------------------------------------------------------->
+
+         <!-- ================= Main Head Start ============== -->
+
+<!------------------------------------------------------------------------>
+
    <head>
+   
       <title>Retrieve data</title>
+   
       <!-- For Hiding an Object (Use Class="hidden")-->
+   
       <style>
          .hidden {
          display: none;
       </style>
+   
       <!-- Make Of Links-->
+   
       <link href="https://sketchware.io/css/deeplink.css" rel="stylesheet"/>
       <link href="bootstrap.min.css" rel="stylesheet">
       <!--<link href='http://sketchware.io/css/deeplink.css' rel='stylesheet'> </link>-->
       <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+   
+
       <!-- End Of Links-->
+   
+
       <!--Meta Links-->
+   
+
       <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta content='width=device-width, initial-scale=1' name='viewport'/>
       <meta property="og:url" content="https://sketify.tk"/>
+   
+
       <!-- End Meta Links-->
+   
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://sketchware.io/vendor/bootstrap/js/bootstrap.min.js"></script>
+
       <!--Cascad Sylings-->
+
       <style>
          body {
          height: 100%;
@@ -92,21 +118,30 @@
 
       <!-- End Header Scripts-->
 
-      <!--  ===============  Main Head  ===============  -->
+<!----------------------------------------------------------------------->     
 
+      <!--  ===============  Main Head End  ===============  -->
+
+<!------------------------------------------------------------------------>
 
    </head>
-   
 
-<!--  ===============  Main Body  ===============  -->
+<!----------------------------------------------------------------------->
 
-<body>
+      <!--  ===============  Main Body Start  ===============  -->
+
+<!----------------------------------------------------------------------->     
+
+   <body>
 
 
             <!-- Main Header Start-->
 
        <div class="container">
          <div class="card">
+
+             <!-- Main Blue Area (Card Header) -->
+
             <div background-color="#008dcd" class="card-header">
                <img alt="Sketify Logo" class="img-responsive" width="90" height="90" src="gt-sketify-white-logo.png">
        </div>
@@ -115,11 +150,13 @@
 
 
 
-<!------------------------------------------------------------------>
+<!---------------------------------------------------------------------->
 
 
 
             <!-- Main Body Start-->
+
+             <!-- Main Card Body -->
 
          <!-- HeadLine Section -->
             <div class="card-body">
@@ -151,7 +188,7 @@
                <!-- Main Body End-->
 
 
-               <!-- Get Buttons-->
+               <!-- Get Buttons (Main Footer)-->
 
          
                <div class="align-right">
@@ -183,8 +220,15 @@
 
 
 
+<!-------------------------------------------------------------------->
+
+
+
 
       <!--
+
+         // Extra Ad For Badges
+
          <div class='container'>
          <div class='card' style="padding:15px;">
          <p style="margin:0px;">Use these badges in your project to promote your content on Sketchub. 
@@ -198,6 +242,8 @@
 
 
 
+<!-------------------------------------------------------------------->
+
 
 
 
@@ -208,20 +254,26 @@
       </style>
 
 
+
+
 <!---------------------------------------------------------------->
 
          
+
       <!-- Script To Get Credentials-->
       
 
 
 <script>
 
-         function createUrl() {
+
+
+
+         function createId() {
 
             var url = document.getElementById("user")
 
-         if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
+            if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
          
 
                   <?php
@@ -231,32 +283,46 @@
             $urid = str_replace( '&&afl=https://sketify.tk&efr=1' , '', $uri );
                 
                 $vari = json_encode($urid);
+
+
                 ?>
             
             
-             };
+             }
           
               
             document.getElementById("user").value = "hidden";
          
-         getdata();
+            getdata();
             
             }
 
-      </script>
+
+
+
+
+   </script>
 
 
       <!-- Scripts To Get Credentials End -->
 
 
+
 <!----------------------------------------------------------------->
 
+
+
       <!-- Firebase Credentials-->
+
       <!-- The core Firebase JS SDK is always required and must be listed first -->
+
       <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+      
       <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#config-web-app -->
+      
       <script>
+
          // Your web app's Firebase configuration
          
          var firebaseConfig = {
@@ -274,27 +340,55 @@
          firebase.initializeApp(firebaseConfig);
          
       </script>
+
+          <!-- End Of Firebase Credentials-->
+
+   <!-------------------------------------------------------------------->       
+
+          <!-- Functions Joining getdata(); -->
+
       <script type="text/javascript" src="Read.js"></script>
+
+          <!-- Functions are Joined -->
+
+
       <script>
-         // Extra Codes Will Go Here...
-         
-         });
-         
+
+         // Extra Codes Will Goes Here...
          
       </script>
+     
+
       <!--Function To Open Project-->
+     
+
       <script>
+
          function openLink() {
-             var uid = "<?= $urid ?>"
-         	var url = "https://sketifyproject.page.link/?link=https://sketify.tk/" + uid + "&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
-         	window.open(url);
+
+            var id = "<?= $urid ?>"
+         	var opener = 
+            "https://sketifyproject.page.link/?link=https://sketify.tk/" 
+            + id + 
+            "&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
+
+            // Open App
+
+         	window.open(opener);
          	
          }
              
       </script>
-      <!-- End Of Firebase Credentials-->
-      <!-- Functions End-->
+
+      <!-- Recaptcha Credentials-->
 
       <script src="https://www.google.com/recaptcha/api.js?render=6LfzeVgaAAAAAP0Al1T-Wj8EW4i53daPHcKn4vZ2"></script>
+
+<!--------------------------------------------------------------------------->
+      
+   <!-- =====================  Main Body End =================== -->
+
+<!--------------------------------------------------------------------------->
+
    </body>
 </html>
