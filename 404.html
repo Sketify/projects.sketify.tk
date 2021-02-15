@@ -201,7 +201,7 @@
                 $vari = json_encode($urid);
                 ?>
             
-              document.getElementById("user").value = "<?php $urid ?>";
+              document.getElementById("user").value = "<?php $url ?>";
                 
             
              };
@@ -268,16 +268,6 @@
       <!-- End Of Firebase Credentials-->
       <!-- Functions End-->
 
-      <div class="col-md-12 form-group" style="padding-right: 0px"> //here
-    <div class="col-md-4 form-group"  style="padding-right: 0px">//here
-        <div class="g-recaptcha" data-size="normal" data-sitekey="6LfzeVgaAAAAAP0Al1T-Wj8EW4i53daPHcKn4vZ2"></div>
-    </div>
-    <div class="col-md-4 form-group">
-        <button type="button" class="btn btn-primary post-comments">Send</button>
-    </div>
-    <div class="col-md-4 form-group"></div>
-</div>
-<script src='https://www.google.com/recaptcha/api.js'></script>
-
+      <script src="https://www.google.com/recaptcha/api.js?render=6LfzeVgaAAAAAP0Al1T-Wj8EW4i53daPHcKn4vZ2"></script>
    </body>
 </html>
