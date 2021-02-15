@@ -80,20 +80,9 @@
       <script>
          // Get Site Url To String Variable $url
          
-         <?php  
-            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-                 $url = "https://";   
-            else  
-                 $url = "http://";   
-            // Append the host(domain name, ip) to the URL.   
-            $url.= $_SERVER['HTTP_HOST'];   
-            
-            // Append the requested resource location to the URL   
-            $url.= $_SERVER['REQUEST_URI'];    
-              
-            ?> 
-         
-         // Got Site Url In $url
+         var url = "windows.location.href";
+
+         // Got Site Url In url
          
          document.getElementById("country").hide();
          
@@ -185,16 +174,20 @@
       <!-- Deeplink Stylesheet-->
       <center>
 
-         <input type="text" id="user" required="required" >
+         <input type="text" id="user" required="required" value="urid" >
      
          </center>
           <!-- Functions Start -->
       <!-- Script To Get Credentials-->
       <script>
-         var url =  window.location.href;
-         
+
          if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
+         
+
                   <?php
+
+         $url =  window.location.href;
+
             $uri = str_replace( 'https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&', '', $url );
             $urid = str_replace( '&&afl=https://sketify.tk&efr=1' , '', $uri );
                 
