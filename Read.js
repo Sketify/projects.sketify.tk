@@ -3,8 +3,12 @@
 function getdata() {
     
     
-    var id =document.getElementById("user").value;
+    var url1 = document.getElementById("user").value;
+
+    var url2 = url1.replace("https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&", "")
     
+    var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
+
     //firebase data retrieval function
     //path of your data
     //.once will get all your data in one time
@@ -28,7 +32,7 @@ function getdata() {
         
       
       if (name.includes("undefined") == false) {
-        
+
         document.getElementById("country").src = "error.png"; 
         document.getElementById("name").innerHTML = name;
         document.getElementById("gender").innerHTML = gender;
