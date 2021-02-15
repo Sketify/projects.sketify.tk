@@ -3,7 +3,7 @@
 function getdata() {
     
     
-    var url1 = document.getElementById("user").value;
+    var url1 = window.location;
 
     var url2 = url1.replace("https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&", "")
     
@@ -13,7 +13,7 @@ function getdata() {
     //path of your data
     //.once will get all your data in one time
    
-          document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
+        document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
 
 		document.getElementById("country").src = "error.png"; 
 
