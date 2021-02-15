@@ -11,6 +11,11 @@ function getdata() {
     
     var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
 
+
+    document.getElementById("user").value = id;
+
+    alert(id);
+
     //firebase data retrieval function
     //path of your data
     //.once will get all your data in one time
