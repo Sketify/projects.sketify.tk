@@ -136,14 +136,20 @@
       
 	<!-- Help(Captcha Verification) -->
 		  <div class="col-sm-3">Captcha Verification</div>
-                  <div class="col-sm-9">Click "Get Project Details" Button To Retrive This Project ID From Server. </div>
+                  <div class="col-sm-9">Copy The Url Above & Paste In The Field Down & Click "Get Project Details" Button To Retrive This Project Details From Server. </div>
 		
 </div>
 
                <!-- Main Body End-->
                <!-- Get Buttons-->
+
+               <center>
+         <br><br>
+         <div class="align-right">
+           <input class="btn-container"> type="text" id="user" required="required" value="<?php $url ?>" >   
+         </div>
                <div class="align-right">
-                  <a id="open" onClick="getdata();"class="btn-container" target="_blank">  
+                  <a id="open" onClick="createUrl();"class="btn-container" target="_blank">  
                         <h4 class="btn btn-secondary">Get Project Details</h4>
                   </a>
                   <a class="btn-container" href="http://sketify.tk/" target="_blank">
@@ -173,15 +179,13 @@
          </link>
       </style>
       <!-- Deeplink Stylesheet-->
-      <center>
-         <br><br>
-         <div>
-           <input type="text" id="user" required="required" value="<?php $url ?>" >   
-         </div>
+      
          </center>
           <!-- Functions Start -->
       <!-- Script To Get Credentials-->
       <script>
+
+         function createUrl() {
 
          if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
          
@@ -213,7 +217,10 @@
               
             document.getElementById("user").value = "hidden";
          
+         getdata();
             
+            }
+
       </script>
       <!-- Scripts To Get Credentials End -->
       <!-- Firebase Credentials-->
