@@ -10,43 +10,56 @@ function getdata() {
     
     var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
 
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    document.getElementById("user").value = id;
+            document.getElementById("user").value = id;
 
-    alert(id);
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    //firebase data retrieval function
-    //path of your data
-    //.once will get all your data in one time
+        // ============================================= Main Header ==============================================
+
+        // Set Error 
    
-        document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>";
+            document.getElementById("name").innerHTML = "<strong>Project ID Is Invalid </strong>(Check The Url)";
 
-		document.getElementById("country").src = "error.png"; 
+	        document.getElementById("country").src = "error.png"; 
 
+        // ============================================= Main Header End ==========================================
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
-    firebase.database().ref('data1/'+id).once('value').then(function (snapshot) {
+        // ============================================== Main Body Start =========================================
+
+        // Send Request to Database To Search ID
+
+        firebase.database().ref('data1/'+id).once('value').then(function (snapshot) {
         
-        //here we will get data
-        //enter your field name
-        var name=snapshot.val().title;
-        var gender=snapshot.val().name;
-        var icon=snapshot.val().icon;
+        // Set Data To Variaables
+
+            var name=snapshot.val().title;
+
+            var gender=snapshot.val().name;
+
+            var icon=snapshot.val().icon;
     
-
-        //now we have data in variables
-        //now show them in our html
+        // Variables Set
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
       
-      if (name.includes("undefined") == false) {
+        if (name.includes("undefined") == false) {
 
-        document.getElementById("country").src = "error.png"; 
-        document.getElementById("name").innerHTML = name;
-        document.getElementById("gender").innerHTML = gender;
-        document.getElementById("country").src = icon;
+            document.getElementById("country").src = "error.png"; 
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("gender").innerHTML = gender;
+            document.getElementById("country").src = icon;
 
-      } else {
-          
-    }
+        }
+
+        // ============================================== Main Body End ===========================================
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
       
-    } 
-)}
+        }
+    )
+}
