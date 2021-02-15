@@ -146,7 +146,7 @@
                <center>
          <br><br>
          <div class="align-right">
-           <input class="btn btn-secondary" type="text" id="user" required="required" value="<?php $url ?>" >  
+           <input class="btn btn-secondary" type="text" id="user" required="required"  >  
          </div>
                <div class="align-right">
                   <a id="open" onClick="createUrl()"class="btn-container" target="_blank">  
@@ -186,6 +186,8 @@
       <script>
 
          function createUrl() {
+
+            var url = document.getElementById("user")
 
          if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
          
