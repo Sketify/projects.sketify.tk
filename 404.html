@@ -193,18 +193,6 @@
          
 
                   <?php
-
-
-               if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-                 $url = "https://";   
-            else  
-                 $url = "http://";   
-            // Append the host(domain name, ip) to the URL.   
-            $url.= $_SERVER['HTTP_HOST'];   
-            
-            // Append the requested resource location to the URL   
-            $url.= $_SERVER['REQUEST_URI'];    
-              
             
 
             $uri = str_replace( 'https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&', '', $url );
