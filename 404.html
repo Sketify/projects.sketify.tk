@@ -44,7 +44,6 @@
 
       <!-- End Meta Links-->
    
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://sketchware.io/vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -180,8 +179,8 @@
                   <div class="col-sm-9">You must have installed Sketify in your Android phone to access this project.</div>
       
 	      <!-- Help(Captcha Verification) -->
-		            <div class="col-sm-3">Captcha Verification</div>
-                  <div class="col-sm-9">Copy The Url Above & Paste In The Field Down & Click "Get Project Details" Button To Retrive This Project Details From Server. </div>
+		            <div class="col-sm-3">reCaptcha Help</div>
+                  <div class="col-sm-9">Please Click Get Project Details To Retrieve Project Data From Server. </div>
 		
 </div>
 
@@ -269,34 +268,7 @@
 
 
 
-         function createId() {
-
-            var url = document.getElementById("user")
-
-            if (url.includes("project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?") !== false)  {             
-         
-
-                  <?php
-            
-
-            $uri = str_replace( 'https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&', '', $url );
-            $urid = str_replace( '&&afl=https://sketify.tk&efr=1' , '', $uri );
-                
-                $vari = json_encode($urid);
-
-
-                ?>
-            
-            
-             }
-          
-              
-            document.getElementById("user").value = "hidden";
-         
-            getdata();
-            
-            }
-
+     
 
 
 
@@ -321,23 +293,8 @@
       <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#config-web-app -->
       
-      <script>
+      <script src="js/data.js">
 
-         // Your web app's Firebase configuration
-         
-         var firebaseConfig = {
-             apiKey: "AIzaSyBK-juZ6krPJCHHELQgOW9sFUXsS9h3wHI",
-             authDomain: "sketify-f7280.firebaseapp.com",
-             databaseURL: "https://sketify-f7280-default-rtdb.firebaseio.com/",
-             projectId: "sketify-f7280-default-rtdb",
-             storageBucket: "sketify-f7280.appspot.com",
-             messagingSenderId: "463332404757",
-             appId: "1:529893568319:android:3362cdc8bbdeb17c486d8a"
-         };
-         
-         // Initialize Firebase
-         
-         firebase.initializeApp(firebaseConfig);
          
       </script>
 
@@ -347,7 +304,7 @@
 
           <!-- Functions Joining getdata(); -->
 
-      <script type="text/javascript" src="Read.js"></script>
+      <script type="text/javascript" src="js/Read.js"></script>
 
           <!-- Functions are Joined -->
 
@@ -364,19 +321,6 @@
 
       <script>
 
-         function openLink() {
-
-            var id = "<?= $urid ?>"
-         	var opener = 
-            "https://sketifyproject.page.link/?link=https://sketify.tk/" 
-            + id + 
-            "&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
-
-            // Open App
-
-         	window.open(opener);
-         	
-         }
              
       </script>
 
