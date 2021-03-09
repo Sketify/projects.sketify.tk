@@ -59,3 +59,5 @@ function getdata() {
         }
     )
 }
+
+        getdata();

@@ -1,28 +1,54 @@
+
 <!DOCTYPE html>
+
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+   
+
+<!----------------------------------------------------------------------->
+
+         <!-- ================= Main Head Start ============== -->
+
+<!------------------------------------------------------------------------>
+
    <head>
-      <title>Retrieve data</title>
+   
+      <title id="heading" >Retrive Project - Sketify</title>
+   
       <!-- For Hiding an Object (Use Class="hidden")-->
+   
       <style>
          .hidden {
          display: none;
       </style>
+   
       <!-- Make Of Links-->
+   
       <link href="https://sketchware.io/css/deeplink.css" rel="stylesheet"/>
       <link href="bootstrap.min.css" rel="stylesheet">
       <!--<link href='http://sketchware.io/css/deeplink.css' rel='stylesheet'> </link>-->
       <link rel="shortcut icon" href="fav.png" />
+   
+
       <!-- End Of Links-->
+   
+
       <!--Meta Links-->
+   
+
       <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta content='width=device-width, initial-scale=1' name='viewport'/>
       <meta property="og:url" content="https://sketify.tk"/>
+   
+
       <!-- End Meta Links-->
+   
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://sketchware.io/vendor/bootstrap/js/bootstrap.min.js"></script>
+
       <!--Cascad Sylings-->
+
       <style>
          body {
          height: 100%;
@@ -80,20 +106,9 @@
       <script>
          // Get Site Url To String Variable $url
          
-         <?php  
-            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-                 $url = "https://";   
-            else  
-                 $url = "http://";   
-            // Append the host(domain name, ip) to the URL.   
-            $url.= $_SERVER['HTTP_HOST'];   
-            
-            // Append the requested resource location to the URL   
-            $url.= $_SERVER['REQUEST_URI'];    
-              
-            ?> 
-         
-         // Got Site Url In $url
+         var url = "windows.location.href";
+
+         // Got Site Url In url
          
          document.getElementById("country").hide();
          
@@ -102,41 +117,65 @@
 
       <!-- End Header Scripts-->
 
-      <!--  ===============  Main Head  ===============  -->
+<!----------------------------------------------------------------------->     
 
+      <!--  ===============  Main Head End  ===============  -->
+
+<!------------------------------------------------------------------------>
 
    </head>
-   
 
-<!--  ===============  Main Body  ===============  -->
+<!----------------------------------------------------------------------->
 
+      <!--  ===============  Main Body Start  ===============  -->
+
+<!----------------------------------------------------------------------->     
 
    <body>
-      <!-- Main Header Start-->
-      <div class="container">
+
+
+            <!-- Main Header Start-->
+
+       <div class="container">
          <div class="card">
+
+             <!-- Main Blue Area (Card Header) -->
+
             <div background-color="#008dcd" class="card-header">
                <img alt="Sketify Logo" class="img-responsive" width="90" height="90" src="gt-sketify-white-logo.png">
-            </div>
+       </div>
+    
             <!-- Main Header End-->
+
+
+
+<!---------------------------------------------------------------------->
+
+
+            
+            <script src="js/Read.js">
+            </script>
+
+
 
 
             <!-- Main Body Start-->
 
+             <!-- Main Card Body -->
 
+         <!-- HeadLine Section -->
             <div class="card-body">
                <h5 class="card-title">Somebody shared you a project from Sketify.</h5>
                <div class="row">
 
-	<!-- Title Section -->
+	      <!-- Title Section -->
                   <div class="col-sm-3">Title</div>
                   <div class="col-sm-9">
-                     <img id="country" src="error.png" alt="Project Icon" style="width:40px;height:35px;">
+                     <img id="country" src="transpa.png" alt="Project Icon" style="width:40px;height:40px;">
                      <a id="name" > </a>
-                     PROJECT ID IS INVALID
                   </div>
 
-	<!-- Published By Whom -->
+	      <!-- Published By Whom -->
                   <div class="col-sm-3">Published by</div>
                   <div  id="gender" class="col-sm-9">
                   </div>
@@ -145,29 +184,56 @@
                   <div class="col-sm-3">Note</div>
                   <div class="col-sm-9">You must have installed Sketify in your Android phone to access this project.</div>
       
-	<!-- Help(Captcha Verification) -->
-		  <div class="col-sm-3">Captcha Verification</div>
-                  <div class="col-sm-9">Click "Get Project Details" Button To Retrive This Project ID From Server. </div>
+	      <!-- Help(Captcha Verification) 
+		            <div class="col-sm-3">reCaptcha Help</div>
+                  <div class="col-sm-9">Please Click Get Project Details To Retrieve Project Data From Server. </div>
+               -->
 		
 </div>
 
+
                <!-- Main Body End-->
-               <!-- Get Buttons-->
+
+
+               <!-- Get Buttons (Main Footer)-->
+
+         
                <div class="align-right">
-                  <a id="open" onClick="getdata();"class="btn-container" target="_blank">  
-                        <h4 class="btn btn-secondary">Get Project Details</h4>
+
+                  <a class="hidden" target="_blank" >
+                      <input class="hidden" type="text" id="user" required="required" >
                   </a>
+                 
+   <!--          <a id="open" onClick="getdata()"class="btn-container" target="_blank">  
+                        <h4 class="btn btn-secondary">Get Project Details</h4>
+                  </a> -->
+
                   <a class="btn-container" href="http://sketify.tk/" target="_blank">
                      <h4 class="btn btn-secondary">Install Sketify</h4>
                   </a>
-                  <a class="btn-container" onClick="openLink()" id="link_main" >
-                     <h4 class="btn btn-primary" id="btn_open_project">Open Project</h4>
+
+                  <a class="btn-container" onClick="openLink()" ><h4 class="btn btn-primary" id="btn_open_project">Open Project</h4>
                   </a>
+
                </div>
+               <!-- Get Buttons End-->
+
             </div>
          </div>
       </div>
+
+
+
+
+<!-------------------------------------------------------------------->
+
+
+
+
       <!--
+
+         // Extra Ad For Badges
+
          <div class='container'>
          <div class='card' style="padding:15px;">
          <p style="margin:0px;">Use these badges in your project to promote your content on Sketchub. 
@@ -178,91 +244,101 @@
          </div>
          </div>
          -->
+
+
+
+<!-------------------------------------------------------------------->
+
+
+
+
       <!-- Deeplink Stylesheet-->
       <style>
          <link href='http://sketchware.io/css/deeplink.css' rel='stylesheet'>
          </link>
       </style>
-      <!-- Deeplink Stylesheet-->
-      <input type="text" id="user" required="required" class="hidden" >
-      <!-- Functions Start -->
-      <!-- Script To Get Credentials-->
-      <script>
-         var url =  "<?= $url ?>";
+
+
+
+
+<!---------------------------------------------------------------->
+
          
-         if (url.includes("msk") !== false)  {             
-                  <?php
-            $uri = str_replace( 'https://projects.sketify.tk/owritten-?id=msk-refer-sketifyapplicationparam-9a71e0719545676a138b25f1a00c30e4dfba301d-1613274417-0-AXz_t-Un1QG914Iv1MvBia1f7ScUVzvJ95H9QICmvFknUMQJHqHp0241u54UDlH24c2cU3bXYzYczYN8jxWpicK5j7i_ZXl-RqMVoIoQRrYX0KnaYuBuKd9xGoUky4jAhyrAUiYY7jbGWNOTA_oYb1G_jEqFH8Ad2ofjx3Fac6EQpLaolsUvsjXLGcI1KGeP_62RtQ_sQGE7u5VEE_dBV-h-FlSyB4bZ6DFwQZHmoMerZQUchYrGj5UrdIahOb-bi8j5jdiauyWUyrTKX8cFGqhOgtVHtgKDYo_zVcvLTipIcW5HtUpk1RCR4QcWUPcj0w', '', $url );
-            $urid = str_replace( '&afI=https://sketify.tk&efr=1' , '', $uri );
-                
-                $vari = json_encode($urid);
-                ?>
-            
-              document.getElementById("user").value = "<?= $urid ?>";
-                
-            
-             };
-          
-              
-              
-            
-      </script>
+
+      <!-- Script To Get Credentials-->
+      
+
+
+<script>
+
+
+
+
+     
+
+
+
+
+   </script>
+
+
       <!-- Scripts To Get Credentials End -->
+
+
+
+<!----------------------------------------------------------------->
+
+
+
       <!-- Firebase Credentials-->
+
       <!-- The core Firebase JS SDK is always required and must be listed first -->
+
       <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+      
       <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#config-web-app -->
-      <script>
-         // Your web app's Firebase configuration
-         
-         var firebaseConfig = {
-             apiKey: "AIzaSyBK-juZ6krPJCHHELQgOW9sFUXsS9h3wHI",
-             authDomain: "sketify-f7280.firebaseapp.com",
-             databaseURL: "https://sketify-f7280-default-rtdb.firebaseio.com/",
-             projectId: "sketify-f7280-default-rtdb",
-             storageBucket: "sketify-f7280.appspot.com",
-             messagingSenderId: "463332404757",
-             appId: "1:529893568319:android:3362cdc8bbdeb17c486d8a"
-         };
-         
-         // Initialize Firebase
-         
-         firebase.initializeApp(firebaseConfig);
+      
+      <script src="js/data.js">
+
          
       </script>
-      <script type="text/javascript" src="Read.js"></script>
+
+          <!-- End Of Firebase Credentials-->
+
+   <!-------------------------------------------------------------------->       
+
+          <!-- Functions Joining getdata(); -->
+
+      <script type="text/javascript" src="js/Read.js"></script>
+
+          <!-- Functions are Joined -->
+
+
       <script>
-         // Extra Codes Will Go Here...
-         
-         click_event = new CustomEvent("click"); 
-         
-             btn_element = document.querySelector("#open"); 
-         
-             btn_element.dispatchEvent(click_event); 
-         
-         document.getElementById("#open").click();
-         
-         $(document).ready( function(){
-         var id = $.urlParam("id");
-         
-         $('#btn_open_project').click(function(e) {
-         openLink(id);
-         });
-         
+
+         // Extra Codes Will Goes Here...
          
       </script>
+     
+
       <!--Function To Open Project-->
+     
+
       <script>
-         function openLink() {
-             var uid = "<?= $urid ?>"
-         	var url = "https://sketifyproject.page.link/?link=https://sketify.tk/&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
-         	window.open(url);
-         	
-         }
+
              
       </script>
-      <!-- End Of Firebase Credentials-->
-      <!-- Functions End-->
+
+      <!-- Recaptcha Credentials-->
+
+      <script src="https://www.google.com/recaptcha/api.js?render=6LfzeVgaAAAAAP0Al1T-Wj8EW4i53daPHcKn4vZ2"></script>
+
+<!--------------------------------------------------------------------------->
+      
+   <!-- =====================  Main Body End =================== -->
+
+<!--------------------------------------------------------------------------->
+
    </body>
 </html>
