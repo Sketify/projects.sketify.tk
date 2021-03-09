@@ -14,11 +14,7 @@ function getdata() {
 
         // ============================================= Main Header ==============================================
 
-        // Set Error 
-   
-            document.getElementById("name").innerHTML = "<strong>  Project ID Is Invalid </strong>(Check The Url)";
-
-	        document.getElementById("country").src = "error.png"; 
+        
 
         // ============================================= Main Header End ==========================================
 
@@ -42,6 +38,11 @@ function getdata() {
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
+      // Set Error 
+   
+            document.getElementById("name").innerHTML = "<strong>  Project ID Is Invalid </strong>(Check The Url)";
+
+            document.getElementById("country").src = "error.png"; 
       
         if (name.includes("undefined") == false) {
 
