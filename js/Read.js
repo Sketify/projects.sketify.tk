@@ -1,6 +1,8 @@
 
 
 function getdata() {
+
+      
     
     
     var url1 = window.location.href;
@@ -14,7 +16,7 @@ function getdata() {
 
         // ============================================= Main Header ==============================================
 
-        
+           
 
         // ============================================= Main Header End ==========================================
 
@@ -38,18 +40,18 @@ function getdata() {
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         
-      // Set Error 
-   
+ // Set Error 
+  
             document.getElementById("name").innerHTML = "<strong>  Project ID Is Invalid </strong>(Check The Url)";
 
-            document.getElementById("country").src = "error.png"; 
+         //   document.getElementById("country").src = "error.png"; 
       
         if (name.includes("undefined") == false) {
 
-            document.getElementById("country").src = "transpa.png"; 
-            document.getElementById("name").innerHTML = name;
-            document.getElementById("gender").innerHTML = gender;
+            document.getElementById("country").src = "transpa.png";
             document.getElementById("country").src = icon;
+            document.getElementById("name").innerHTML = "   " + name;
+            document.getElementById("gender").innerHTML = gender;           
             document.getElementById("heading").innerHTML = name + " - Sketify";
             document.getElementById("des").innerHTML = name + " shared a Project on Sketify";
         }
