@@ -30,14 +30,14 @@
     
     var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
 
-          /*  var opener = 
+        var opener = 
             "https://sketifyproject.page.link/?link=https://sketify.tk/" 
             + id + 
             "&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
 
             // Open App
 
-            window.open(opener);  */
+            window.open(opener);  
 
 
             

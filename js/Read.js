@@ -50,7 +50,8 @@ function getdata() {
             document.getElementById("name").innerHTML = name;
             document.getElementById("gender").innerHTML = gender;
             document.getElementById("country").src = icon;
-
+            document.getElementById("heading").innerHTML = name + " - Sketify";
+            document.getElementById("des").innerHTML = name + " shared a Project on Sketify";
         }
 
         // ============================================== Main Body End ===========================================
