@@ -3,7 +3,7 @@
 function getdata() {
 
       
-    
+  /*  
     
     var url1 = window.location.href;
 
@@ -11,6 +11,11 @@ function getdata() {
     
     var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
 
+*/
+
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+alert(id); // 234234234
 
         ///////////////////////////////////////////// ////////////////////////////////////////////////////////////////
 
