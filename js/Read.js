@@ -65,9 +65,7 @@ alert(id); // 234234234
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
       
-        } else {
-             document.getElementById("name").innerHTML = "<strong>  Project Not Exist! </strong>(Check The Url)";
-        }
+        } 
     )
 }
 
