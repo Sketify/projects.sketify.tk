@@ -15,6 +15,7 @@ function getdata() {
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id');
+alert(id); // 234234234
 
         ///////////////////////////////////////////// ////////////////////////////////////////////////////////////////
 
