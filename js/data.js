@@ -16,24 +16,10 @@
          firebase.initializeApp(firebaseConfig);
 
 
-         function openLink() {
 
-
-    var url1 = window.location.href;
-
-    var url2 = url1.replace("https://projects.sketify.tk/project?id=prefix-9a71e0719545676a138b25f1a00c30e4dfba301d?&&", "")
-    
-    var id = url2.replace("&&afl=https://sketify.tk&efr=1", "")
-
-        var opener = 
-            "https://sketifyproject.page.link/?link=https://sketify.tk/" 
-            + id + 
-            "&apn=com.sketify.msk&afl=https://sketify.tk&efr=1";
-
-            // Open App
-
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var a = document.getElementById('btn_open_project');
+            a.href = "project.sketify://" + url;
             window.open(opener);  
 
-
-            
-         }
