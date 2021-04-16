@@ -21,5 +21,4 @@
             var url = new URL(url_string);
             var a = document.getElementById('btn_open_project');
             a.href = "project.sketify://" + url;
-            window.open(opener);  
 
