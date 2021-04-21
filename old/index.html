@@ -1,16 +1,7 @@
 
 <!DOCTYPE html>
 
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'
-class="hidden">
-
-
-          <!-- Functions Joining getdata(); -->
-
-      <script type="text/javascript" src="js/Read.js"></script>
-
-          <!-- Functions are Joined -->
-
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
    
 
 <!----------------------------------------------------------------------->
@@ -22,7 +13,7 @@ class="hidden">
    <head>
    
       <title id="heading" >Sketify</title>
-   
+
       <!-- For Hiding an Object (Use Class="hidden")-->
    
       <style>
@@ -48,8 +39,8 @@ class="hidden">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta content='width=device-width, initial-scale=1' name='viewport'/>
-      <meta property="og:url" content="https://sketify.tk"/>
-      <meta name="description" id="des" content=""/>
+      <meta property="og:url" content="http://projects.sketify.tk"/>
+      <meta id="des" name="description" content="A Project in Sketify"/>
    
 
       <!-- End Meta Links-->
@@ -113,17 +104,7 @@ class="hidden">
          }
       </style>
       <!-- Header Scripts-->
-      <script>
-         // Get Site Url To String Variable $url
-         
-         var url = "windows.location.href";
-
-         // Got Site Url In url
-         
-         document.getElementById("country").hide();
-         
-      </script>
-
+  ]
 
       <!-- End Header Scripts-->
 
@@ -162,8 +143,7 @@ class="hidden">
 <!---------------------------------------------------------------------->
 
 
-
-
+    
 
             <!-- Main Body Start-->
 
@@ -178,7 +158,7 @@ class="hidden">
                   <div class="col-sm-3">Title</div>
                   <div class="col-sm-9">
                      <img id="country" src="transpa.png" alt="Project Icon" style="width:40px;height:40px;">
-                     <a id="name" > <strong>  Project ID Is Invalid </strong> </a>
+                     <a id="name" > </a>
                   </div>
 
 	      <!-- Published By Whom -->
@@ -210,15 +190,15 @@ class="hidden">
                       <input class="hidden" type="text" id="user" required="required" >
                   </a>
                  
-         <!--    <a id="open" onClick="getdata()"class="btn-container" target="_blank">  
+   <!--          <a id="open" onClick="getdata()"class="btn-container" target="_blank">  
                         <h4 class="btn btn-secondary">Get Project Details</h4>
-                  </a>  -->
+                  </a> -->
 
                   <a class="btn-container" href="http://sketify.tk/" target="_blank">
                      <h4 class="btn btn-secondary">Install Sketify</h4>
                   </a>
 
-                  <a class="btn-container" id="btn_open_project" ><h4 class="btn btn-primary">Open Project</h4>
+                  <a class="btn-container" onClick="openLink()" ><h4 class="btn btn-primary" id="btn_open_project">Open Project</h4>
                   </a>
 
                </div>
@@ -281,11 +261,6 @@ class="hidden">
 
 
      
-            var url_string = window.location.href;
-            var url = new URL(url_string);
-            var a = document.getElementById('btn_open_project');
-            a.href = "projects.sketify://" + url;
-
 
 
 
@@ -319,6 +294,11 @@ class="hidden">
 
    <!-------------------------------------------------------------------->       
 
+          <!-- Functions Joining getdata(); -->
+
+      <script type="text/javascript" src="js/Read.js"></script>
+
+          <!-- Functions are Joined -->
 
 
       <script>
