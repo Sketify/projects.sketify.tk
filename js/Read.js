@@ -49,7 +49,7 @@ function getdata() {
 
 		//   document.getElementById("country").src = "error.png"; 
 
-		if (name.includes("undefined") == true) {
+		if (name.includes("undefined") == false) {
 
 			document.getElementById("country").src = "transpa.png";
 			document.getElementById("country").src = icon;
