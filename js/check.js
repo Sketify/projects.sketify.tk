@@ -1,4 +1,3 @@
-<script>
 
 
          // Your web app's Firebase configuration
@@ -79,5 +78,3 @@ function login(){
 function logout(){
   firebase.auth().signOut();
 }
-
-</script>
