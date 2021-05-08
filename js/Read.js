@@ -6,8 +6,6 @@ function getdata() {
 
 	const id = urlParams.get('id');
 
-	alert(id);
-
 	// Send Request to Database To Search ID
 
 	firebase.database().ref('data1/' + id).once('value').then(function (snapshot) {
