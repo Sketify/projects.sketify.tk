@@ -42,3 +42,4 @@ function getdata() {
 }
 
 login();
+getdata();
