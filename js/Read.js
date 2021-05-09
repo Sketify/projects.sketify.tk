@@ -41,4 +41,4 @@ function getdata() {
 	})
 }
 
-getdata();
+login();
