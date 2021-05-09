@@ -28,15 +28,15 @@ firebase.auth().onAuthStateChanged(function(user) {
 
       var email_id = user.email;
 
-	<?php
-		echo "Request Code -0.1";
-	?>
+	
+		alert("Request Code - 0.1");
+	
 
     } else {
 
-	<?php
-		echo "Request Code -0.1";
-	?>
+
+		alert("Request Code -0.1");
+	
 
     }
 
@@ -47,9 +47,9 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
 
-	<?php
-		echo "Request Code -0.3";
-	?>
+	
+		alert("Request Code -0.3");
+
 
   }
 });
@@ -66,9 +66,9 @@ function login(){
 
     window.alert("Error : " + errorMessage);
 
-	<?php
-		echo "Request Code -0.E";
-	?>
+	
+		alert("Request Code -0.E");
+	
 
     // ...
   });
